@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flickr API</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="overlay" class="hide">
+        <figure id="close"><img src="./imgs/cross-circle.svg"></figure>
+        <figure id="full-image"></figure>
+        <figcaption></figcaption>
+    </section>
+    <header>
+        <a href="./index.html">
+            <h1>Flickr API project - image search</h1>
+        </a>
+    </header>
+    <main>
+        <section id="search-section"> 
+            <input type="text" id="query">
+            <button id="search-button">Search</button>
+            <p id="search-term"></p>
+        </section>
+        <section id="gallery" class="white-bg">
+            <section id="preferences">
+                <section id="img-per-page"></section>
+                
+                <section id="sort-imgs"></section>
+                
+            </section>
+            <section id="pages" class="hide">
+                <img id="back" src="./imgs/back.svg">
+                <p id="page-number"></p>
+                <img id="forward" src="./imgs/forward.svg">
+            </section>
+            <section id="img-results"></section>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
